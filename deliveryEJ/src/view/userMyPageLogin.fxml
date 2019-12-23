@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="550.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.userMyPageLoginController">
+	<children>
+		<Label layoutX="37.0" layoutY="377.0" text="연락처" />
+		<TextField fx:id="txtLoginPhone" layoutX="100.0" layoutY="372.0" prefHeight="29.0" prefWidth="198.0" promptText="'-'없이 숫자만 입력하세요" />
+		<TextField fx:id="txtPw" layoutX="100.0" layoutY="417.0" />
+		<Label layoutX="25.0" layoutY="422.0" text="비밀번호" />
+		<Button fx:id="btnJoMem" layoutX="308.0" layoutY="372.0" mnemonicParsing="false" text="회원가입" />
+		<Button fx:id="btnLogin" layoutX="309.0" layoutY="417.0" mnemonicParsing="false" text="로그인" />
+		<Label layoutX="36.0" layoutY="512.0" text="비밀번호를 잊으셨나요?" />
+		<Button fx:id="btnFdPw" layoutX="181.0" layoutY="508.0" mnemonicParsing="false" text="비밀번호 찾기" />
+      <VBox alignment="CENTER" layoutX="-1.0" layoutY="42.0" prefHeight="261.0" prefWidth="400.0">
+         <children>
+      		<ImageView fitHeight="261.0" fitWidth="282.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/택배기사님3.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+	</children>
+</AnchorPane>

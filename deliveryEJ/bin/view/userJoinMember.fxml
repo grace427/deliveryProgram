@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="350.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.userJoinMemberController">
+	<children>
+		<Label layoutX="47.0" layoutY="49.0" text="이름" />
+		<Label layoutX="45.0" layoutY="91.0" text="연락처" />
+		<Label layoutX="45.0" layoutY="133.0" text="비밀번호" />
+		<Label layoutX="47.0" layoutY="168.0" text="비밀번호 재입력" />
+		<Label layoutX="47.0" layoutY="206.0" text="주소" />
+		<TextField fx:id="txtJoName" layoutX="102.0" layoutY="44.0" />
+		<TextField fx:id="txtJoPhone1" layoutX="102.0" layoutY="86.0" prefHeight="29.0" prefWidth="60.0" />
+		<TextField fx:id="txtJoPhone2" layoutX="173.0" layoutY="86.0" prefHeight="29.0" prefWidth="60.0" />
+		<TextField fx:id="txtJoPhone3" layoutX="244.0" layoutY="86.0" prefHeight="29.0" prefWidth="60.0" />
+		<TextField fx:id="txtJoPw" layoutX="117.0" layoutY="128.0" prefHeight="29.0" prefWidth="289.0" promptText="비밀번호는 6자리 숫자로 입력해주세요." />
+		<TextField fx:id="txtJoRePw" layoutX="173.0" layoutY="163.0" />
+		<TextField fx:id="txtJoPostCode" layoutX="87.0" layoutY="201.0" prefHeight="29.0" prefWidth="85.0" />
+		<Button fx:id="btnFdPostCode" layoutX="187.0" layoutY="201.0" mnemonicParsing="false" text="우편번호 찾기" />
+		<TextField fx:id="txtJoAddress" layoutX="87.0" layoutY="236.0" prefHeight="29.0" prefWidth="264.0" />
+		<Button fx:id="btnJoOK" layoutX="117.0" layoutY="281.0" mnemonicParsing="false" text="확인" />
+		<Button fx:id="btnJoCancel" layoutX="194.0" layoutY="281.0" mnemonicParsing="false" text="취소" />
+		<ImageView fitHeight="194.0" fitWidth="209.0" layoutX="377.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../images/delivery-truck.png" />
+			</image>
+		</ImageView>
+	</children>
+</AnchorPane>

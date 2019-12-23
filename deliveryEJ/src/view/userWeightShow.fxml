@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="100.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label id="lblMemWName" alignment="CENTER" layoutX="21.0" layoutY="21.0" prefHeight="25.0" prefWidth="77.0" style="-fx-font-size: 20;" />
+      <Label layoutX="98.0" layoutY="26.0" text="님이 예약한 운임은 " />
+      <Label id="lblWeight" alignment="CENTER" layoutX="203.0" layoutY="21.0" prefHeight="25.0" prefWidth="108.0">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <Label layoutX="318.0" layoutY="24.0" prefHeight="19.0" prefWidth="92.0" text="입니다." />
+      <Label layoutX="380.0" layoutY="24.0" prefHeight="19.0" prefWidth="289.0" text="결제 진행하시겠습니까?" />
+      <Button id="btnWCancel" layoutX="257.0" layoutY="60.0" mnemonicParsing="false" text="취소" />
+      <Button id="btnWOK" layoutX="335.0" layoutY="60.0" mnemonicParsing="false" text="확인" />
+   </children>
+</AnchorPane>

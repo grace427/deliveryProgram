@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<Label layoutX="29.0" layoutY="25.0" text="예약정보를 확인해주세요" />
+		<Label layoutX="30.0" layoutY="115.0" text="이름" />
+		<Label layoutX="29.0" layoutY="156.0" text="주소" />
+		<Label layoutX="24.0" layoutY="241.0" text="연락처" />
+		<TextField id="txtRcvName" layoutX="90.0" layoutY="110.0" />
+		<TextField id="txtRcvPostCode" layoutX="90.0" layoutY="150.0" prefHeight="29.0" prefWidth="90.0" />
+		<TextField id="txtRcvAddress" layoutX="90.0" layoutY="194.0" prefHeight="29.0" prefWidth="278.0" />
+		<TextField id="txtRcvPhone1" layoutX="90.0" layoutY="236.0" prefHeight="29.0" prefWidth="54.0" />
+		<TextField id="txtRcvPhone2" layoutX="150.0" layoutY="236.0" prefHeight="29.0" prefWidth="54.0" />
+		<TextField id="txtRcvPhone3" layoutX="210.0" layoutY="236.0" prefHeight="29.0" prefWidth="54.0" />
+		<TextField id="txtSndPhone3" layoutX="210.0" layoutY="466.0" prefHeight="29.0" prefWidth="54.0" />
+		<TextField id="txtSndPhone2" layoutX="150.0" layoutY="466.0" prefHeight="29.0" prefWidth="54.0" />
+		<TextField id="txtSndPhone1" layoutX="90.0" layoutY="466.0" prefHeight="29.0" prefWidth="54.0" />
+		<TextField id="txtSndAddress" layoutX="90.0" layoutY="424.0" prefHeight="29.0" prefWidth="285.0" />
+		<TextField id="txtSndPostCode" layoutX="90.0" layoutY="380.0" prefHeight="29.0" prefWidth="90.0" />
+		<TextField id="txtSndName" layoutX="90.0" layoutY="340.0" />
+		<Label layoutX="24.0" layoutY="471.0" text="연락처" />
+		<Label layoutX="29.0" layoutY="386.0" text="주소" />
+		<Label layoutX="30.0" layoutY="345.0" text="이름" />
+		<Label layoutX="29.0" layoutY="75.0" text="받는 사람" />
+		<Label layoutX="29.0" layoutY="305.0" text="보내는 사람" />
+		<Label layoutX="27.0" layoutY="556.0" text="물품 종류" />
+		<Label layoutX="28.0" layoutY="596.0" text="무게 " />
+		<Label layoutX="28.0" layoutY="632.0" text="결제 방법" />
+		<Label layoutX="29.0" layoutY="672.0" text="예약일자 " />
+		<TextField id="txtType" layoutX="100.0" layoutY="548.0" prefHeight="29.0" prefWidth="162.0" />
+		<TextField id="txtWeight" layoutX="70.0" layoutY="591.0" prefHeight="29.0" prefWidth="54.0" />
+		<TextField id="txtPay" layoutX="107.0" layoutY="626.0" prefHeight="29.0" prefWidth="54.0" />
+		<TextField id="txtDate" layoutX="108.0" layoutY="666.0" prefHeight="29.0" prefWidth="114.0" />
+		<Label layoutX="137.0" layoutY="597.0" text="kg" />
+		<Button id="btnReCancel" layoutX="126.0" layoutY="723.0" mnemonicParsing="false" text="취소" />
+		<Button id="btnReOK" layoutX="216.0" layoutY="723.0" mnemonicParsing="false" text="확인" />
+      <TextField id="txtTime" layoutX="231.0" layoutY="666.0" prefHeight="29.0" prefWidth="127.0" />
+      <Label layoutX="368.0" layoutY="682.0" text="시" />
+      <TextField id="txtPlace" layoutX="122.0" layoutY="512.0" prefHeight="29.0" prefWidth="108.0" />
+      <Label layoutX="24.0" layoutY="517.0" text="수령희망장소" />
+	</children>
+</AnchorPane>

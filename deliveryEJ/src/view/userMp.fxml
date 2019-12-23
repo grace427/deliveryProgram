@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.userMyPageToController">
+	<children>
+		<Button fx:id="btnSndBox" contentDisplay="TOP" layoutX="152.0" layoutY="266.0" mnemonicParsing="false" text="내가 보낸 택배" />
+		<Button fx:id="btnModifyInfo" layoutX="158.0" layoutY="317.0" mnemonicParsing="false" text="내 정보 수정" />
+		<ImageView fitHeight="184.0" fitWidth="216.0" layoutX="101.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../images/gift.png" />
+			</image>
+		</ImageView>
+	</children>
+</AnchorPane>

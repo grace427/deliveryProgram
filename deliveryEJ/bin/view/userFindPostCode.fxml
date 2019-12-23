@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.userPostCodeController">
+   <children>
+      <Label layoutX="40.0" layoutY="26.0" text="우편번호 찾기" />
+      <Label layoutX="40.0" layoutY="61.0" text="도로명 주소 검색" />
+      <Label layoutX="40.0" layoutY="103.0" text="찾으시려는 도로명 주소를 입력해주세요." />
+      <Label layoutX="40.0" layoutY="122.0" text="예) 도로명 :  후곡로 55" />
+      <TextField id="txtBkRoadName" fx:id="txtSearch" layoutX="33.0" layoutY="151.0" prefHeight="29.0" prefWidth="321.0" />
+      <Button id="btnPostCodeSch" fx:id="btnSearch" layoutX="373.0" layoutY="151.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="111.0" text="검색" />
+      <TableView id="postCodetableView" fx:id="postTableView" layoutX="35.0" layoutY="186.0" prefHeight="200.0" prefWidth="447.0" />
+   </children>
+</AnchorPane>

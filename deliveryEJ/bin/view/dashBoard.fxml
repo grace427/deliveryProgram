@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RootController">
+   <children>
+      <VBox prefHeight="800.0" prefWidth="265.0" style="-fx-background-color: #dcdcdc;">
+         <children>
+            <Label lineSpacing="1.0" prefHeight="188.0" prefWidth="265.0" style="-fx-background-color: #000000;" text="    Admin" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </Label>
+            <Separator prefHeight="6.0" prefWidth="265.0" style="-fx-background-color: #000000;" />
+            <Button fx:id="btnMemAdmin" mnemonicParsing="false" prefHeight="98.0" prefWidth="271.0" style="-fx-background-color: #dcdcdc;" text="회원 관리" />
+            <Button fx:id="btnDelAdmin" mnemonicParsing="false" prefHeight="98.0" prefWidth="271.0" style="-fx-background-color: #dcdcdc;" text="배송 관리" />
+            <Button fx:id="btnEmpAdmin" mnemonicParsing="false" prefHeight="98.0" prefWidth="271.0" style="-fx-background-color: #dcdcdc;" text="직원 관리" />
+            <Button mnemonicParsing="false" prefHeight="98.0" prefWidth="271.0" style="-fx-background-color: #dcdcdc;" />
+            <ImageView fitHeight="171.0" fitWidth="191.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/shipped.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <Pane layoutX="265.0" prefHeight="85.0" prefWidth="1016.0" style="-fx-background-color: #fffafa;">
+         <children>
+            <ComboBox fx:id="cbMonth" layoutX="844.0" layoutY="10.0" prefWidth="150.0" />
+            <Label layoutX="32.0" layoutY="22.0" text="Data of this month" />
+         </children></Pane>
+      <LineChart fx:id="LineChart" animated="false" layoutX="265.0" layoutY="85.0" prefHeight="324.0" prefWidth="1016.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <BarChart fx:id="BarChart" animated="false" layoutX="265.0" layoutY="394.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <PieChart fx:id="PieChart" layoutX="781.0" layoutY="386.0" />
+      <Label layoutX="1116.0" layoutY="118.0" text="Monthly">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+      <Label layoutX="557.0" layoutY="410.0" text="주요 도시별 매출 현황">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label layoutX="1075.0" layoutY="410.0" text="Package Type">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

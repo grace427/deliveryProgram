@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea id="txtAreaNotice" layoutX="354.0" layoutY="63.0" prefHeight="200.0" prefWidth="214.0" text="공지사항" />
+      <Label id="lblAdmin" layoutX="89.0" layoutY="113.0" prefHeight="75.0" prefWidth="145.0" text="admin">
+         <font>
+            <Font name="Malgun Gothic" size="24.0" />
+         </font></Label>
+      <Label layoutX="188.0" layoutY="134.0" text="관리자님!">
+         <font>
+            <Font size="27.0" />
+         </font></Label>
+      <Label id="lblLoginDate" layoutX="40.0" layoutY="172.0" prefHeight="28.0" prefWidth="287.0" text="yyyy-mm-dd hh:mm:ss">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="208.0" text="에 접속에 성공하셨습니다.">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button id="btnOK" layoutX="121.0" layoutY="252.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="125.0" text="확인" />
+      <ImageView fitHeight="91.0" fitWidth="137.0" layoutX="128.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/기본이미지.png" />
+         </image></ImageView>
+   </children>
+</AnchorPane>

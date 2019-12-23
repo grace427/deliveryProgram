@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="279.0" layoutY="45.0" text="검색 기간 선택" />
+      <Label layoutX="14.0" prefHeight="47.0" prefWidth="215.0" text="내가  보낸 택배">
+         <font>
+            <Font name="Malgun Gothic" size="26.0" />
+         </font>
+      </Label>
+      <TableView id="tableViewOutBound" layoutX="29.0" layoutY="87.0" prefHeight="381.0" prefWidth="747.0" />
+      <DatePicker id="datePicStart" layoutX="366.0" layoutY="41.0" />
+      <DatePicker id="datePicEnd" layoutX="556.0" layoutY="41.0" />
+      <Button id="btnCheck" layoutX="731.0" layoutY="41.0" mnemonicParsing="false" text="조회" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="860.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.userBookController">
+	<children>
+		<Label layoutX="25.0" layoutY="25.0" text="받는 사람" />
+		<Label layoutX="40.0" layoutY="56.0" text="이름" />
+		<Label layoutX="40.0" layoutY="93.0" text="주소" />
+		<Label layoutX="29.0" layoutY="164.0" text="연락처" />
+		<TextField fx:id="txtBkRcvName" layoutX="80.0" layoutY="51.0" />
+		<TextField fx:id="txtBkRcvPostCode" layoutX="80.0" layoutY="88.0" prefHeight="29.0" prefWidth="114.0" />
+		<TextField fx:id="txtBkRcvAddress" layoutX="80.0" layoutY="123.0" prefHeight="29.0" prefWidth="320.0" />
+		<TextField fx:id="txtBkRcvPhone1" layoutX="90.0" layoutY="159.0" prefHeight="29.0" prefWidth="59.0" />
+		<TextField fx:id="txtBkRcvPhone2" layoutX="160.0" layoutY="159.0" prefHeight="29.0" prefWidth="59.0" />
+		<TextField fx:id="txtBkRcvPhone3" layoutX="232.0" layoutY="159.0" prefHeight="29.0" prefWidth="59.0" />
+		<Button fx:id="btnFdPostCode1" layoutX="211.0" layoutY="88.0" mnemonicParsing="false" text="우편번호 찾기" />
+		<Separator layoutX="20.0" layoutY="210.0" prefHeight="3.0" prefWidth="660.0" />
+		<Button fx:id="btnFdPostCode2" layoutX="213.0" layoutY="295.0" mnemonicParsing="false" text="우편번호 찾기" />
+		<TextField fx:id="txtBkSndPhone3" layoutX="234.0" layoutY="366.0" prefHeight="29.0" prefWidth="59.0" />
+		<TextField fx:id="txtBkSndPhone2" layoutX="162.0" layoutY="366.0" prefHeight="29.0" prefWidth="59.0" />
+		<TextField fx:id="txtBkSndPhone1" layoutX="92.0" layoutY="366.0" prefHeight="29.0" prefWidth="59.0" />
+		<TextField fx:id="txtBkSndAddress" layoutX="82.0" layoutY="330.0" prefHeight="29.0" prefWidth="361.0" />
+		<TextField fx:id="txtBkSndPostCode" layoutX="82.0" layoutY="295.0" prefHeight="29.0" prefWidth="114.0" />
+		<TextField fx:id="txtBkSndName" layoutX="82.0" layoutY="258.0" />
+		<Label layoutX="31.0" layoutY="371.0" text="연락처" />
+		<Label layoutX="42.0" layoutY="300.0" text="주소" />
+		<Label layoutX="42.0" layoutY="263.0" text="이름" />
+		<Label layoutX="27.0" layoutY="232.0" text="보내는 사람" />
+		<Label layoutX="29.0" layoutY="415.0" text="수령희망 장소" />
+		<HBox layoutX="24.0" layoutY="444.0" prefHeight="45.0" prefWidth="538.0" spacing="10.0">
+			<children>
+				<RadioButton fx:id="rdSecurity" mnemonicParsing="false" text="경비실">
+					<toggleGroup>
+						<ToggleGroup fx:id="hopePlaceGroup" />
+					</toggleGroup>
+				</RadioButton>
+				<RadioButton fx:id="rdFrontDoor" mnemonicParsing="false" text="현관 앞" toggleGroup="$hopePlaceGroup" />
+				<RadioButton fx:id="rdUnBox" mnemonicParsing="false" text="무인택백함" toggleGroup="$hopePlaceGroup" />
+				<RadioButton fx:id="rdEtc1" mnemonicParsing="false" text="기타" toggleGroup="$hopePlaceGroup" />
+				<TextField fx:id="txtBkPlaceEtc" prefHeight="29.0" prefWidth="168.0" />
+			</children>
+		</HBox>
+		<Label layoutX="25.0" layoutY="509.0" text="물품 종류" />
+		<Separator layoutX="20.0" layoutY="488.0" prefHeight="3.0" prefWidth="660.0" />
+		<HBox layoutX="24.0" layoutY="534.0" prefHeight="51.0" prefWidth="669.0" spacing="10.0">
+
+			<children>
+				<RadioButton fx:id="rdClothes" mnemonicParsing="false" text="의류/잡화" toggleGroup="$typeGroup">
+
+				</RadioButton>
+				<RadioButton fx:id="rdBooks" mnemonicParsing="false" text="서적" toggleGroup="$typeGroup" />
+				<RadioButton fx:id="rdElec" mnemonicParsing="false" text="가전제품" toggleGroup="$typeGroup" />
+				<RadioButton fx:id="rdFoods" mnemonicParsing="false" text="식품류" toggleGroup="$typeGroup" />
+				<RadioButton fx:id="rdPapers" mnemonicParsing="false" text="서류" toggleGroup="$typeGroup" />
+				<RadioButton fx:id="rdEtc2" mnemonicParsing="false" text="기타" toggleGroup="$typeGroup" />
+				<TextField fx:id="txtBkTypeEtc" />
+			</children>
+		</HBox>
+		<Separator layoutX="20.0" layoutY="585.0" prefHeight="3.0" prefWidth="602.0" />
+		<Label layoutX="25.0" layoutY="599.0" text="무게입력" />
+		<Label layoutX="298.0" layoutY="599.0" text="결제방법" />
+		<HBox layoutX="24.0" layoutY="624.0" prefHeight="37.0" prefWidth="639.0" spacing="20.0">
+			<children>
+				<HBox prefHeight="33.0" prefWidth="255.0">
+					<children>
+						<TextField fx:id="txtBkWeight" text="무게를 입력해주세요. ">
+							<HBox.margin>
+								<Insets right="10.0" />
+							</HBox.margin>
+						</TextField>
+						<Label text="kg">
+							<HBox.margin>
+								<Insets top="5.0" />
+							</HBox.margin>
+						</Label>
+					</children>
+				</HBox>
+				<HBox prefHeight="100.0" prefWidth="200.0">
+					<children>
+						<VBox prefHeight="160.0" prefWidth="206.0">
+							<children>
+								<Label prefHeight="19.0" prefWidth="194.0" text="결제방법을 선택하세요." />
+								<HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+
+									<children>
+										<RadioButton fx:id="rdBeforePay" mnemonicParsing="false" text="선불" toggleGroup="$payGroup">
+										</RadioButton>
+										<RadioButton fx:id="rdAfterPay" mnemonicParsing="false" text="착불" toggleGroup="$payGroup" />
+									</children>
+								</HBox>
+							</children>
+						</VBox>
+					</children>
+				</HBox>
+			</children>
+		</HBox>
+		<Label layoutX="23.0" layoutY="692.0" text="예약요청 일자" />
+		<Separator layoutX="20.0" layoutY="675.0" prefHeight="3.0" prefWidth="660.0" />
+		<Label layoutX="62.0" layoutY="721.0" text="예약일자와 예약시간을 선택해주세요." />
+		<DatePicker fx:id="datePicBook" layoutX="67.0" layoutY="752.0" prefHeight="29.0" prefWidth="237.0" />
+		<ComboBox fx:id="comboTime" layoutX="317.0" layoutY="752.0" prefHeight="29.0" prefWidth="219.0" />
+		<Label layoutX="541.0" layoutY="757.0" text="시" />
+		<Button fx:id="btnCancel" layoutX="479.0" layoutY="814.0" mnemonicParsing="false" text="취소" />
+		<Button fx:id="btnNext" layoutX="548.0" layoutY="814.0" mnemonicParsing="false" text="다음" />
+	</children>
+</AnchorPane>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button id="btnOK" layoutX="243.0" layoutY="363.0" mnemonicParsing="false" text="확인" />
+      <Button id="btnClose" layoutX="312.0" layoutY="363.0" mnemonicParsing="false" text="취소" />
+      <Separator layoutX="58.0" layoutY="350.0" prefHeight="13.0" prefWidth="538.0" />
+      <Label layoutX="25.0" layoutY="116.0" prefHeight="28.0" prefWidth="120.0" text="회원번호">
+         <font>
+            <Font name="Malgun Gothic Semilight" size="24.0" />
+         </font></Label>
+      <TextField id="TxtMemID" layoutX="143.0" layoutY="113.0" prefHeight="35.0" prefWidth="120.0" />
+      <TextField id="TxtMemPhone" layoutX="92.0" layoutY="197.0" prefHeight="42.0" prefWidth="107.0" />
+      <Label layoutX="12.0" layoutY="204.0" text="연락처">
+         <font>
+            <Font name="Malgun Gothic Semilight" size="24.0" />
+         </font></Label>
+      <Label layoutX="400.0" layoutY="204.0" text="비밀번호">
+         <font>
+            <Font name="Malgun Gothic Semilight" size="24.0" />
+         </font></Label>
+      <TextField id="TxtMemPW" layoutX="506.0" layoutY="197.0" prefHeight="42.0" prefWidth="120.0" />
+      <TextField id="TxtMemJoinDate" layoutX="275.0" layoutY="197.0" prefHeight="42.0" prefWidth="114.0" />
+      <Label layoutX="203.0" layoutY="204.0" text="가입일">
+         <font>
+            <Font name="Malgun Gothic Semilight" size="24.0" />
+         </font></Label>
+      <Label layoutX="12.0" layoutY="301.0" text="주소">
+         <font>
+            <Font name="Malgun Gothic Semilight" size="24.0" />
+         </font></Label>
+      <TextField id="TxtMemAddress" layoutX="64.0" layoutY="298.0" prefHeight="42.0" prefWidth="311.0" />
+      <TextField id="TxtMemName" layoutX="375.0" layoutY="110.0" prefHeight="42.0" prefWidth="167.0" />
+      <Label layoutX="303.0" layoutY="117.0" text="이름">
+         <font>
+            <Font name="Malgun Gothic Semilight" size="24.0" />
+         </font></Label>
+      <Pane layoutY="-1.0" prefHeight="84.0" prefWidth="640.0" style="-fx-background-color: #fffafa;">
+         <children>
+            <Label layoutX="53.0" layoutY="25.0" text="회원정보 수정">
+               <font>
+                  <Font name="Malgun Gothic" size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TextField id="TxtMemPostcode" layoutX="496.0" layoutY="294.0" prefHeight="42.0" prefWidth="120.0" />
+      <Label layoutX="393.0" layoutY="301.0" text="우편번호">
+         <font>
+            <Font name="Malgun Gothic Semilight" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

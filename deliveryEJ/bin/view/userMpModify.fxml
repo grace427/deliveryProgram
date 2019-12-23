@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="390.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button id="btnModify" layoutX="161.0" layoutY="341.0" mnemonicParsing="false" text="수정" />
+      <Button id="btnRegist" layoutX="100.0" layoutY="341.0" mnemonicParsing="false" text="등록" />
+      <Label layoutX="26.0" layoutY="298.0" prefHeight="19.0" prefWidth="61.0" text="비밀번호" />
+      <Button id="btnFdPostCode" layoutX="194.0" layoutY="216.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="128.0" text="우편번호 찾기" />
+      <Label layoutX="26.0" layoutY="218.0" prefHeight="19.0" prefWidth="61.0" text="주소" />
+      <Label layoutX="26.0" layoutY="178.0" prefHeight="19.0" prefWidth="61.0" text="연락처" />
+      <Label layoutX="26.0" layoutY="138.0" prefHeight="19.0" prefWidth="41.0" text="이름" />
+      <Label layoutX="17.0" layoutY="101.0" text="회원번호" />
+      <Label layoutX="25.0" layoutY="36.0" prefHeight="37.0" prefWidth="186.0" text="내 정보 수정">
+         <font>
+            <Font name="Malgun Gothic" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="78.0" fitWidth="48.0" layoutX="187.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/잠금1.png" />
+         </image></ImageView>
+      <TextField id="txtMemID" layoutX="86.0" layoutY="96.0" prefHeight="29.0" prefWidth="166.0" />
+      <TextField id="txtMpName" layoutX="81.0" layoutY="136.0" />
+      <TextField id="txtMpPhone1" layoutX="81.0" layoutY="176.0" prefHeight="29.0" prefWidth="198.0" />
+      <TextField id="txtMpPostCode" layoutX="63.0" layoutY="216.0" prefHeight="23.0" prefWidth="118.0" />
+      <TextField id="txtMpAddress" layoutX="63.0" layoutY="254.0" prefHeight="23.0" prefWidth="224.0" />
+      <TextField id="txtMpPw" layoutX="92.0" layoutY="293.0" prefHeight="23.0" prefWidth="179.0" />
+   </children>
+</AnchorPane>
